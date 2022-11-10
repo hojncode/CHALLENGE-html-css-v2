@@ -1,0 +1,81 @@
+:root {
+    --very-dark-blue :                 #0B122B;
+    --white:             hsl(0, 0%, 100%);
+    --dark-blue: hsl(228, 56%, 26%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { font-family: 'Outfit', sans-serif;}
+
+a {text-decoration: none;}
+
+body {
+    background-color: var(--very-dark-blue);
+    min-height: 100vh; 
+    padding: 25px;
+    display: flex;
+    /* 중간정렬 */
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+
+div {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.bgImage {
+    top: 50%;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.wrap {
+    background-color: var(--dark-blue);
+    border-top-right-radius: 100px;
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+.firstBox {
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.icons--fylo {
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+.icons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: var(--very-dark-blue);
+    padding: 5px;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+
+.icons--document,
+.icons--folder,
+.icons--upload {
+    height: 15px;
+    width: 15px;
+}
