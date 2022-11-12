@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
-  <link rel="stylesheet" href="style.css" class="">
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+    <link rel="stylesheet" href="style.css" class="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <img src="./images/bg-desktop.png" alt="" class="bgImage" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    
-  </style> -->
-</head>
-<body>
-  <img src="./images/bg-desktop.png" alt="" class="bgImage">
-  <div class="wrap" >
+    <section>
+      <div class="firstBox">
+        <div class="firstBox--inboxOne">
+          <img src="./images/logo.svg" alt="" class="icons--fylo" />
+        </div>
 
-    <div class="firstBox">
-      <img src="./images/logo.svg" alt="" class="icons--fylo">
+        <div class="firstBox--inboxTwo">
+          <div class="firstBox--inboxTwo--iconsWrap">
+            <img src="./images/icon-document.svg" alt="" />
+          </div>
+          <div class="firstBox--inboxTwo--iconsWrap">
+            <img src="./images/icon-folder.svg" alt="" />
+          </div>
+          <div class="firstBox--inboxTwo--iconsWrap">
+            <img src="./images/icon-upload.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="secondBox">
+        <div class="text--info">
+          You’ve used <span class="text--bold">815 GB</span> of your storage
+        </div>
+
+        <div class="bar">
+          <div class="innerBar">
+            <div class="whiteBall"></div>
+          </div>
+        </div>
+
+        <div class="text--gb text--bold">
+          <div class="text--bold">0 GB</div>
+          <div class="text--bold">100 GB</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bubbleBox">
+      <div class="text--bigNum">185</div>
+      &nbsp;&nbsp;
+      <div>GB Left</div>
     </div>
-      <div class="icons">
-          <img src="./images/icon-document.svg" alt="" class="icons--document">
-      </div>
-      <div class="icons">
-          <img src="./images/icon-folder.svg" alt="" class="icons--folder">
-      </div>
-      <div class="icons">
-          <img src="./images/icon-upload.svg" alt="" class="icons--upload">
-      </div>
-  
-  </div>
 
-
-<div class="secondBox">
-    <span>
-    You’ve used 815 GB of your storage
-    </span>
-
-    <span>
-    185 GB Left
-    </span>
-    <span>
-      0 GB
-    </span>
-  <span>
-    1000 GB
-  </span>
-</div>
-
-
-  <!-- <div class="attribution">
+    <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io/profile/hojncode" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-
-</body>
+  </footer> -->
+  </body>
 </html>

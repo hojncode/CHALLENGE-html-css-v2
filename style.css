@@ -78,21 +78,18 @@ div {
 }
 .firstBox--inboxTwo {
   margin-top: 30px;
-  margin-left: 25px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.icons--document,
-.icons--folder,
-.icons--upload {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 15px;
-  background-color: var(--very-dark-blue);
-  padding: 10px;
-  border-radius: 5px;
-  height: 45px;
-  width: 45px;
+.firstBox--inboxTwo--iconsWrap {
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    background-color: var(--very-dark-blue);
+    display: inline-flex;
+    margin-left: 20px;
 }
 
 .secondBox {
