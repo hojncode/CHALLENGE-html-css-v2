@@ -1,0 +1,96 @@
+:root {
+  --very-dark-blue: hsl(229, 57%, 11%);
+  --white: hsl(0, 0%, 100%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  /* 중간정렬 */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+div {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.bgImage {
+  top: 50%;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.firstBox {
+  background-color: var(--dark-blue);
+  border-radius: 10px 100px 10px 10px;
+  height: 200px;
+  width: 350px;
+  padding: 10px;
+}
+
+.firstBox--inboxOne {
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.icons--fylo {
+  margin-top: 10px;
+}
+.firstBox--inboxTwo {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.icons--document,
+.icons--folder,
+.icons--upload {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  background-color: var(--very-dark-blue);
+  padding: 10px;
+  border-radius: 5px;
+  height: 45px;
+  width: 45px;
+}
