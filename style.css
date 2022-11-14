@@ -18,6 +18,7 @@
 
 html {
   font-family: "Raleway", sans-serif;
+  /* width: 1440px; */
 }
 
 a {
@@ -27,27 +28,31 @@ a {
 body {
   background-color: var(--very-dark-blue);
   min-height: 100vh;
+  min-width: 100vw;
   padding: 25px;
   display: flex;
   flex-wrap: wrap;
   /* 중간정렬 */
   justify-content: center;
   align-items: center;
-  position: relative;
   z-index: 0;
 }
 
 section {
   display: flex;
   justify-content: center;
-  margin-left: auto;
 }
 
 div {
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .bgImage {
@@ -78,21 +83,18 @@ div {
 }
 .firstBox--inboxTwo {
   margin-top: 30px;
-  margin-left: 25px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.icons--document,
-.icons--folder,
-.icons--upload {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 15px;
-  background-color: var(--very-dark-blue);
-  padding: 10px;
-  border-radius: 5px;
-  height: 45px;
-  width: 45px;
+.firstBox--inboxTwo--iconsWrap {
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    background-color: var(--very-dark-blue);
+    display: inline-flex;
+    margin-left: 20px;
 }
 
 .secondBox {
@@ -107,6 +109,7 @@ div {
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 30px;
+  /* position: relative; */
 }
 
 .text--info {
@@ -118,6 +121,7 @@ div {
   width: 100%;
   border-radius: 20px;
   padding: 0.5%;
+  
 }
 
 .bar .innerBar {
@@ -152,18 +156,16 @@ div {
 }
 
 .bubbleBox {
-  position: relative;
+  position: absolute;
   background-color: var(--white);
   display: flex;
   width: 180px;
   height: 70px;
   border-radius: 10px 10px 0 10px;
-  margin-bottom: 20px;
-  transform: translateX(-118%) translateY(-70%);
+  margin-left: 660px;
 }
 
 .bubbleBox::after {
-  position: absolute;
   border-top: 20px solid white;
   border-left: 20px solid transparent;
   content: "";
@@ -180,7 +182,7 @@ div {
   color: black;
 }
 
-.attribution {
+/* .attribution {
   position: relative;
   z-index: 3;
   font-size: 11px;
@@ -191,4 +193,166 @@ div {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+} */
+
+
+@media (min-width: 320px) and (max-width: 991px) {
+  
+
+body {
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
 }
+
+
+  section {
+    display: flex; 
+    flex-wrap: wrap;
+  }
+  
+  div {
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    z-index: 2;
+  }
+  
+
+  .bgImage {
+    top: 0;
+    height: 100vh;
+    z-index: 0;
+  }
+  
+  .firstBox {
+    background-color: var(--dark-blue);
+    border-radius: 10px 100px 10px 10px;
+    width: 340px;
+  }
+  
+  .firstBox--inboxOne {
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  
+  .icons--fylo {
+    margin-top: 10px;
+  }
+  .firstBox--inboxTwo {
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .firstBox--inboxTwo--iconsWrap {
+      border-radius: 5px;
+      height: 45px;
+      width: 45px;
+      background-color: var(--very-dark-blue);
+      display: inline-flex;
+      margin-left: 20px;
+  }
+  
+  .secondBox {
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    height: 150px;
+    width: 340px;
+    margin-top: 20px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px;
+    /* position: relative; */
+  }
+  
+  .text--info {
+    color: var(--grayish-blue);
+  }
+  
+  .bar {
+    background-color: var(--very-dark-blue);
+    width: 100%;
+    border-radius: 20px;
+    padding: 0.5%;
+    
+  }
+  
+  .bar .innerBar {
+    background-image: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5%;
+  }
+  
+  .bar .innerBar .whiteBall {
+    height: 10px;
+    width: 3%;
+    background-color: var(--white);
+    border-radius: 20px;
+  }
+  
+  .text--gb {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .text--bold {
+    font-weight: 700;
+    color: var(--white);
+  }
+  
+  .bubbleBox {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 350px;
+    background-color: var(--white);
+    display: flex;
+    width: 180px;
+    height: 70px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .bubbleBox::after {
+    border-width: 0px;
+  }
+  
+  .text--bigNum {
+    font-size: 40px;
+    font-weight: 1000;
+    color: black;
+  }
+  
+  /* .attribution {
+    position: relative;
+    z-index: 3;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 0;
+    height: 20px;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  } */
+  
+}
+
+
